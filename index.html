@@ -35,6 +35,18 @@
     </script>
     <!--End of Tawk.to Script-->
 
+    <!-- Start of EmailJS Integration Code -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({publicKey: "s6Edyaav0YxkhumE3"});
+        })();
+    </script>
+
+    <!-- End of EmailJS Integration Code -->
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
@@ -59,12 +71,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -105,62 +111,37 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <img src="images/IMG_4145.jpeg" class="img-fluid rounded-3" alt="About Us">
+                    <img src="images/portfolio-img1.jpg" class="img-fluid rounded-3" alt="About Us">
                 </div>
                 <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
                     <div class="my-3 my-lg-0">
                         <span class="subtitle">Detailed Information</span>
                         <h2>About Me</h2>
                         <p>
-                            My name is EKEMINI JOSEPH, and i love Technology so much that it became part of me especially when it comes to building stuffs.
+                            A passionate Frontend Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs and some other cool libraries and frameworks with a touch of PHP.
                         </p>
                     </div>
+
                     <div class="pt-4">
                         <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill"
-                                    aria-selected="true">Skills</button>
+                                    aria-selected="true">Proficiency</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-Award-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-Award" type="button" role="tab" aria-controls="pills-Award"
-                                    aria-selected="false">Awards</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-experiance-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-experiance" type="button" role="tab"
-                                    aria-controls="pills-experiance" aria-selected="false">Experience</button>
-                            </li>
+                            
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-education" type="button" role="tab"
                                     aria-controls="pills-education" aria-selected="false">Education</button>
                             </li>
                         </ul>
+
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-skill" role="tabpanel"
                                 aria-labelledby="pills-skill-tab">
                                 <div class="single-progress">
-                                    <h6>Html<i class="fa-brands fa-html5"></i></h6>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 100%"
-                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <span class="label"></span>
-                                </div>
-                                <div class="single-progress">
-                                    <h6>CSS<i class="fa-brands fa-css3-alt" style="color: ;"></i></h6>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 95%"
-                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <span class="label"></span>
-                                </div>
-                                <div class="single-progress">
-                                    <h6>Bootstrap<i class="fa-brands fa-bootstrap"></i></h6>
+                                    <h6>Frontend/Design<i class="fa-solid fa-laptop"></i></h6>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 90%"
                                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
@@ -168,60 +149,7 @@
                                     </div>
                                     <span class="label"></span>
                                 </div>
-                                <div class="single-progress">
-                                    <h6>markdown<i class="fa-brands fa-markdown"></i></h6>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%"
-                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <span class="label"></span>
-                                </div>
-                                <div class="single-progress">
-                                    <h6>Javascript<i class="fa-brands fa-js"></i></h6>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 80%"
-                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <span class="label"></span>
-                                </div>
-                                <div class="single-progress">
-                                    <h6>React<i class="fa-brands fa-react"></i></h6>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 82%"
-                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <span class="label"></span>
-                                </div>
-                                <div class="single-progress">
-                                    <h6>git<i class="fa-brands fa-git-alt"></i></h6>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 70%"
-                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <span class="label"></span>
-                                </div>
-                                <div class="single-progress">
-                                    <h6>github<i class="fa-brands fa-github"></i></h6>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 70%"
-                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <span class="label"></span>
-                                </div>
-                                <div class="single-progress">
-                                    <h6>wordpress<i class="fa-brands fa-wordpress"></i></h6>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 70%"
-                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <span class="label"></span>
-                                </div>
+                                
                                 <div class="single-progress">
                                     <h6>
                                         Php<i class="fa-brands fa-php"></i>
@@ -233,59 +161,43 @@
                                     </div>
                                     <span class="label"></span>
                                 </div>
+
+
+                                <div class="single-progress">
+                                    <h6>git<i class="fa-brands fa-git-alt"></i></h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label"></span>
+                                </div>
+                                
+                                <div class="single-progress">
+                                    <h6>wordpress<i class="fa-brands fa-wordpress"></i></h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label"></span>
+                                </div>
+                                
                             </div>
-                            <!-- <div class="tab-pane fade" id="pills-Award" role="tabpanel"
-                                aria-labelledby="pills-Award-tab">
-                                <ul class="text-start ps-0">
-                                    <li><a href="#">Best Instructor
-                                            <span>- Winner</span></a> 2019 - 2020
-                                    </li>
-                                    <li><a href="#">CSS Design Awards
-                                            <span>- Winner</span></a> 2017 - 2018
-                                    </li>
-                                    <li><a href="#">JS Awards
-                                            <span>- site of the
-                                                day</span></a> 2013- 2015
-                                    </li>
-                                    <li><a href="#">DevRel
-                                            <span>- Winner</span></a> 2019 - 2020
-                                    </li>
-                                </ul>
-                            </div> -->
-                            <!-- <div class="tab-pane fade" id="pills-experiance" role="tabpanel"
-                                aria-labelledby="pills-experiance-tab">
-                                <ul class="text-start ps-0">
-                                    <li><a href="#">Sr. Front-end
-                                            Engineer<span> -
-                                                Google</span></a> 2018 - Current
-                                    </li>
-                                    <li><a href="#">Front-end
-                                            Engineer<span> -
-                                                Microsoft</span></a> 2017 - 2018
-                                    </li>
-                                    <li><a href="#">Software
-                                            Engineer<span> - Ayo
-                                            </span></a> 2013- 2014</li>
-                                    <li><a href="#">Software
-                                            Engineer<span> - kemmy
-                                            </span></a> 2013- 2014</li>
-                                </ul>
-                            </div> -->
+                            
                             <div class="tab-pane fade" id="pills-education" role="tabpanel"
                                 aria-labelledby="pills-education-tab">
                                 <ul class="text-start ps-0">
-                                    <li><a href="#">Student
-                                        <span> - Lord
-                                                Shepherd
-                                                Nursery/Primary</span></a> 2007-2012
+                                    <li>
+                                        <a href="#!">
+                                            Web Developer & Instructor <span> - CodeManiac Software Solutions</span>
+                                        </a> 2021-Present
                                     </li>
-                                    <li><a href="#">Student
-                                            <span> - FGC
-                                                Ikot-ekpene, Akwa Ibom State</span></a> 2013-2019
-                                    </li>
-                                    <li><a href="#">Web
-                                            Developer<span>
-                                            </span>& Instructor</a>Currently
+
+                                    <li>
+                                        <a href="#!">
+                                            Computer Scientist<span> - YabaTech College of Technology</span>
+                                        </a> Currently
                                     </li>
                                 </ul>
                             </div>
@@ -298,138 +210,6 @@
     </section>
     <!-- About section exit -->
 
-    <!-- Services section -->
-    <section id="services" class="services_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center mb-4">
-                    <span class="subtitle">What I can do for you</span>
-                    <h2>My Awesome Service</h2>
-                    <p>Technology should improve your life… not be your life.<br class="d-none d-md-block">
-                        So let’s go invent tomorrow instead of worrying about what happened yesterday.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body text-md-start text-center">
-                            <img src="./images/service/service-1.svg" alt="service" class="img-fluid mb-4">
-                            <h3>Deployment</h3>
-                            <p>Here we make our customers Satisfied.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body text-md-start text-center">
-                            <img src="./images/service/service-2.svg" alt="service" class="img-fluid mb-4">
-                            <h3>Website Development</h3>
-                            <p>Become a good Programmer in 12 weeks.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body text-md-start text-center">
-                            <img src="./images/service/service-3.svg" alt="service" class="img-fluid mb-4">
-                            <h3>Web Designs</h3>
-                            <p>Inspiration they say is the best Motivation.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body text-md-start text-center">
-                            <img src="./images/service/service-3.svg" alt="service" class="img-fluid mb-4">
-                            <h3>Computer Basic Skills</h3>
-                            <p>Technology is best when it brings people together. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body text-md-start text-center">
-                            <img src="./images/service/service-4.svg" alt="service" class="img-fluid mb-4">
-                            <h3>Social Media Connection</h3>
-                            <p>Yes social Media is very important as a #techie to gain connectons to other tech experts.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body text-md-start text-center">
-                            <img src="./images/service/service-3.svg" alt="service" class="img-fluid mb-4">
-                            <h3>Wordpress Designs</h3>
-                            <p>I also make use of Wordpress a bit and it's cool.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Services section exit -->
-
-    <!-- Portfolio Sectrion -->
-    <section id="portfolio" class="portfolio_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center mb-4">
-                    <span class="subtitle">My Complete project</span>
-                    <h2>Recent Project</h2>
-                    <p>I have not failed.<br class="d-none d-md-block">
-                        I’ve just found 10,000 ways that won’t work.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="https://frontend-camp.netlify.app/"  class="card p-0">
-                        <span style="background-image: url('./images/portfolio/Foodies.png')"></span>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <a class="card p-0" href="https://jerrydcodemaster.github.io/JS_Countdown_Timer/">
-                        <span style="background-image: url('./images/portfolio/App-Landing-Page.png')"></span>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="https://jerrydcodemaster.github.io/intro-component-with-signup-form-master/" class="card p-0">
-                        <span
-                            style="background-image: url('./images/portfolio/E-Commerce-Website-Using-Bootstap-5.png')"></span>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="https://jerrydcodemaster.github.io/tailwind_ManageLandingpage/" class="card p-0">
-                        <span style="background-image: url('./images/portfolio/HeadPhones.png')"></span>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="https://testimonialpage.netlify.app/" class="card p-0">
-                        <span style="background-image: url('./images/portfolio/Ecommerce-Jewellery-Website.png')"></span>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="https://testimonialpage.netlify.app/" class="card p-0">
-                        <span style="background-image: url('./images/portfolio/Hashtag-Landing-Page.png')"></span>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="https://jerrydcodemaster.github.io/Interactive-rating-board/" class="card p-0">
-                        <span
-                            style="background-image: url('./images/portfolio/Christmas-Landing-Page.png')"></span>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <a href="" class="card p-0">
-                        <span style="background-image: url('./images/portfolio/SEO-Landing-Page.png')"></span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio Section exit -->
-
     <!-- Contact section -->
     <section id="contact" class="contact_wrapper">
         <div class="container">
@@ -438,31 +218,23 @@
                     <span class="subtitle">Contact Me <i class="fa-solid fa-phone"></i></span>
                     <h2>Hire Me.</h2>
                     <div class="row call_details mb-4">
-                        <label class="col-sm-3">Call us:</label>
-                        <div class="col-sm-9 mb-lg-2">
-                            <a href="tel:+234 901 934 1443">+234 901 934 1443</a>
-                        </div>
-                        <label class="col-sm-3">Email:</label>
-                        <div class="col-sm-9 mb-3 mb-lg-2">
-                            <a href="mailto:ekeminijoseph83@gmail.com">ekeminijoseph83@gmail.com</a>
-                        </div>
+                        <a href="mailto:ekeminijoseph83@gmail.com">
+                            <i class="fa-solid fa-envelope">&nbsp;&nbsp;</i>
+                            ekeminijoseph83@gmail.com
+                        </a>
                     </div> 
                     <form>
                         <div class="mb-4">
-                            <input type="text" class="form-control" placeholder="Your Name..." autocomplete="off" required>
+                            <input type="text" class="form-control" id="fullName" placeholder="Your Name..." autocomplete="off" required>
                         </div>
                         <div class="mb-4">
-                            <input type="number" class="form-control" placeholder="Your Phone..." autocomplete="off" required>
+                            <input type="number" class="form-control" id="phone_no" placeholder="Your Phone..." autocomplete="off" required>
                         </div>
                         <div class="mb-4">
-                            <input type="email" class="form-control" placeholder="Your Email..." autocomplete="off" required>
+                            <input type="email" class="form-control" id="email_id" placeholder="Your Email..." autocomplete="off" required>
                         </div>
-                        <div class="mb-4">
-                            <textarea cols="40" rows="4" class="form-control" id="message"
-                                placeholder="Write a Message..." required>
-                            </textarea>
-                        </div>
-                        <button type="submit" class="main-btn">Submit</button>
+                        <textarea cols="40" rows="4" class="form-control mb-4" id="message" placeholder="Write a Message..." autocomplete="off" required></textarea>
+                        <button onclick="SendMail()" type="submit" class="main-btn">Submit</button>
                     </form>
                 </div>
                 <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
@@ -485,19 +257,22 @@
                 <div class="col-lg-4 col-md-6">
                     <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center jus social-icon mb-3 mb-md-0">
                         <li>
-                            <a href="https://www.instagram.com/spar.kle5547" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ekemini-joseph-506242247/"><i class="fab fa-linkedin"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/sparkle.khay" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                            <a href="https://www.twitter.com/EkeminiJoseph13"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://www.instagram.com/spar.kle5547"><i class="fab fa-instagram"></i></a>
+                        </li> -->
+                        <li>
+                            <a href="mailto:ekeminijoseph83@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.twitter.com/EkeminiJoseph13" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/sparkle.khay"><i class="fab fa-facebook-f"></i> </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/ekemini-joseph-506242247/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/JerryDcodemaster/" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/JerryDcodemaster/"><i class="fab fa-github"></i></a>
                         </li>
                     </ul>
                 </div>

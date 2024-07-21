@@ -16,6 +16,30 @@ navBar.forEach(function (a){
         navCollapse.classList.remove("show");
     })
 })
- 
 
+// Send Mail
+function SendMail() {
+    var params = {
+        from_name : document.getElementById("fullName").value,
+        email_id : document.getElementById("email_id").value,
+        phone_no : document.getElementById("phone_no").value,
+        message : document.getElementById("message").value
+    }
 
+    emailjs.send("service_7drt05t", "template_wzf9dif", params).then(function (res) {
+        alert("Success! " + res.status);
+        document.getElementById("fullName").value = "";
+        document.getElementById("email_id").value = "";
+        document.getElementById("phone_no").value = "";
+        document.getElementById("message").value = "";
+    });
+
+    // const fullName = document.getElementById("fullName").value;
+    // const email = document.getElementById("email_id").value;
+    // const phoneNumber = document.getElementById("phone_no").value;
+    // const message = document.getElementById("message").value;
+
+    // if(fullName == "" || email == "" || phoneNumber == "" || message == "") {
+    //     alert("All Inputs must be filled!")
+    // } 
+}
