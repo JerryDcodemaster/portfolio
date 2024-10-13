@@ -220,7 +220,7 @@ button {
     width: 100%;
     height: auto;
     min-height: 650px;
-    background-image: url('../images/pexels-hasan-albari-1229861.jpg');
+    background-image: url('../images/bg-img.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -369,6 +369,15 @@ button {
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.x-tweet svg {
+    margin: 6px;
+    fill: var(--text-gray);
+}
+
+.x-tweet:hover svg {
+    fill: var(--text-white);
+}
+
 .footer_wrapper .social-icon a:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -382,6 +391,11 @@ button {
 }
 .footer_wrapper .copyright-text a {
     color: var(--primary-color);
+}
+/* Projects */
+.project-cont img {
+    width: 27vw;
+    height: 30vh;
 }
 /* Responsive Code */
 @media (max-width:991px) {
