@@ -20,18 +20,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Start of EmailJS Integration Code -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({publicKey: "s6Edyaav0YxkhumE3"});
-        })();
-    </script>
-
-    <!-- End of EmailJS Integration Code -->
-
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
@@ -431,7 +419,22 @@
                             Feel free to reach out for collaborations, project discussions, or just to say hi. I’m open to freelance work, exploring fresh ideas, and engaging in technical chats.
                         </p>
                     </div> 
-                    <form>
+
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="dd5bfab8-87bc-4d85-b48b-2884fc3a94df">
+                        
+                        <div class="mb-4">
+                            <input type="text" name="name" class="form-control" id="fullName" placeholder="Your Name..." required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" name="email" class="form-control" id="email_id" placeholder="Your Email..." required>
+                        </div>
+                        <textarea cols="40" rows="4" name="message" class="form-control mb-4" id="message" placeholder="Write a Message..." required></textarea>
+                        
+                        <button type="submit" class="main-btn">Submit</button>
+                    </form>
+
+                    <!-- <form>
                         <div class="mb-4">
                             <input type="text" class="form-control" id="fullName" placeholder="Your Name..." autocomplete="off" required>
                         </div>
@@ -440,7 +443,7 @@
                         </div>
                         <textarea cols="40" rows="4" class="form-control mb-4" id="message" placeholder="Write a Message..." autocomplete="off" required></textarea>
                         <button onclick="SendMail()" type="submit" class="main-btn">Submit</button>
-                    </form>
+                    </form> -->
                 </div>
                 <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
                     <img src="./images/contact.jpg" class="img-fluid">
