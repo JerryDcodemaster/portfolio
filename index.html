@@ -420,8 +420,9 @@
                         </p>
                     </div> 
 
-                    <form action="https://api.web3forms.com/submit" method="POST">
+                    <form id="contactForm">
                         <input type="hidden" name="access_key" value="dd5bfab8-87bc-4d85-b48b-2884fc3a94df">
+                        <input type="hidden" name="redirect" value="false">
                         
                         <div class="mb-4">
                             <input type="text" name="name" class="form-control" id="fullName" placeholder="Your Name..." required>
@@ -431,8 +432,11 @@
                         </div>
                         <textarea cols="40" rows="4" name="message" class="form-control mb-4" id="message" placeholder="Write a Message..." required></textarea>
                         
-                        <button type="submit" class="main-btn">Submit</button>
+                        <button type="submit" class="main-btn" id="submitBtn">Submit</button>
                     </form>
+
+                    <!-- Toast Message Container -->
+                    <div id="toast" class="toast-message"></div>
 
                     <!-- <form>
                         <div class="mb-4">

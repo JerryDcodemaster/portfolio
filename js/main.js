@@ -16,3 +16,55 @@ navBar.forEach(function (a){
         navCollapse.classList.remove("show");
     })
 })
+
+// Web3Forms Submission Handler
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const submitBtn = document.getElementById('submitBtn');
+    const originalText = submitBtn.textContent;
+    const form = this;
+    
+    // Show loading state
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+    
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(form)
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            // Show success toast
+            showToast('Message sent successfully! 🎉', 'success');
+            
+            // Clear form
+            form.reset();
+        } else {
+            // Show error toast
+            showToast('Failed to send message. Try again.', 'error');
+        }
+    } catch (error) {
+        showToast('Error sending message. Check your connection.', 'error');
+        console.error('Error:', error);
+    } finally {
+        // Reset button
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
+
+// Toast function
+function showToast(message, type = 'success') {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.className = `toast-message show ${type}`;
+    
+    // Auto-hide after 3 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 3000);
+}

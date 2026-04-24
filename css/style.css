@@ -397,6 +397,44 @@ button {
     width: 27vw;
     height: 30vh;
 }
+/* Toast Notification */
+.toast-message {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 9999;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+.toast-message.show {
+    display: block;
+}
+
+.toast-message.success {
+    background-color: var(--primary-color);
+}
+
+.toast-message.error {
+    background-color: #dc3545;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* Responsive Code */
 @media (max-width:991px) {
 
